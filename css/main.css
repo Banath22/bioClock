@@ -1,0 +1,17 @@
+body{
+	background: url('images/graywall.jpg');
+}
+
+#canvas{
+	background: url('../javascript/clockimages/clock.png');
+	display: block;
+	margin: auto;
+	margin-top: 5%;
+}
+
+#digiClock{
+	text-align: center;
+	color: white;
+	padding: 3%;
+	margin: 0px auto;
+}
