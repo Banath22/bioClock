@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,8 +10,20 @@
 
 </head>
 <body>
+
 <div class="wrapper">
 	<canvas id="canvas" width="500" height="500">
+
+<!-- 	<?php
+	require_once 'config/config.php';
+	require_once 'library/connect.php';	
+
+			$sql = "SELECT id, name, surname FROM users";
+			$result = $mysqli->query($sql); 
+ 
+
+	?> -->
+
 
 	</canvas>
 	<div id="digiClock">Hier komt een digiklok :o</div>
