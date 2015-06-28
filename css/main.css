@@ -1,18 +1,19 @@
+<<<<<<< HEAD
 body{
 	background: url('images/graywall.jpg');
 	color: white;
+=======
+html{
+	width: 100%;
+	height: 100%;
+	font-family: 'Raleway', sans-serif;
+	overflow: hidden;
+>>>>>>> origin/master
 }
 
-#canvas{
-	background: url('../javascript/clockimages/clock.png');
-	display: block;
-	margin: auto;
-	margin-top: 5%;
+body{
+	background: url('images/graywall.jpg');
+	margin: 0;
+	padding: 0;
 }
 
-#digiClock{
-	text-align: center;
-	color: white;
-	padding: 3%;
-	margin: 0px auto;
-}

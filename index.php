@@ -16,6 +16,7 @@
 <body>
 
 <div class="wrapper">
+<<<<<<< HEAD
 
 
 
@@ -69,6 +70,8 @@ $request_password = (empty($_POST['password'])) ? '' : $_POST['password'];
 
 	</canvas>
 	<div id="digiClock">Hier komt een digiklok :o</div>
+=======
+>>>>>>> origin/master
 </div>
 </body>
 </html>
