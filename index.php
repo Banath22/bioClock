@@ -16,10 +16,6 @@
 <body>
 
 <div class="wrapper">
-<<<<<<< HEAD
-
-
-
 	
 <?php
 session_start();
@@ -63,15 +59,6 @@ $request_password = (empty($_POST['password'])) ? '' : $_POST['password'];
 	 } 
 
 ?>
-
-
-	<canvas id="canvas" width="500" height="500">
-
-
-	</canvas>
-	<div id="digiClock">Hier komt een digiklok :o</div>
-=======
->>>>>>> origin/master
 </div>
 </body>
 </html>
