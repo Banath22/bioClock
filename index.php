@@ -1,4 +1,8 @@
+<?php 
+	require_once 'config/config.php';
+	require_once 'library/connect.php';	
 
+ ?>
 
 <!DOCTYPE html>
 <html>
@@ -12,18 +16,52 @@
 <body>
 
 <div class="wrapper">
+
+<form method="POST" action="login.php">
+Username:<br>`
+<input type="text" name="username">
+<br>
+Password:<br>
+<input type="password" name="password"><br><br>
+<INPUT type="submit">
+</form>
+
 	<canvas id="canvas" width="500" height="500">
 
-<!-- 	<?php
-	require_once 'config/config.php';
-	require_once 'library/connect.php';	
+<?php
+session_start();
 
-			$sql = "SELECT id, name, surname FROM users";
-			$result = $mysqli->query($sql); 
- 
+$action = (empty($_GET['action'])) ? '' : $_GET['action'];
+$request_username = (empty($_POST['username'])) ? '' : $_POST['username'];
+$request_password = (empty($_POST['password'])) ? '' : $_POST['password'];
 
-	?> -->
 
+
+	switch ($action) {
+	 	case 'login':
+	 		include 'login.php';
+	 	break;
+
+	 	case 'loginteacher':
+	 		include 'login.php';
+	 	break;
+	 	
+	 	default:
+	 		# code...
+	 		break;
+	 } 
+
+
+// $sql = "SELECT id, name, surname FROM users";
+			// $result = $mysqli->query($sql); 
+
+
+
+
+
+			 
+
+	?>
 
 	</canvas>
 	<div id="digiClock">Hier komt een digiklok :o</div>
