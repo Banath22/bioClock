@@ -1,8 +1,14 @@
+<<<<<<< HEAD
+body{
+	background: url('images/graywall.jpg');
+	color: white;
+=======
 html{
 	width: 100%;
 	height: 100%;
 	font-family: 'Raleway', sans-serif;
 	overflow: hidden;
+>>>>>>> origin/master
 }
 
 body{
