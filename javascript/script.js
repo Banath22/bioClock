@@ -57,7 +57,7 @@ minutes_hand.src = "javascript/clockimages/minuteHand.png";
     else if (hours <= 9 && minutes <= 30) {
         context.drawImage(faceNull,0,0);
     }
-    else if (hours <= 10) {
+    else if (hours <= 10 && minutes <= 01) {
         context.drawImage(faceOne,0,0);
     }
     else if (hours <= 12 || minutes <= 25){
