@@ -17,17 +17,9 @@
 
 <div class="wrapper">
 
-<form method="POST" action="login.php">
-Username:<br>`
-<input type="text" name="username">
-<br>
-Password:<br>
-<input type="password" name="password"><br><br>
-<INPUT type="submit">
-</form>
 
-	<canvas id="canvas" width="500" height="500">
 
+	
 <?php
 session_start();
 
@@ -38,30 +30,42 @@ $request_password = (empty($_POST['password'])) ? '' : $_POST['password'];
 
 
 	switch ($action) {
-	 	case 'login':
-	 		include 'login.php';
-	 	break;
+	 	// case 'login':
+	 	// 	include 'login.php';
+	 	// break;
 
 	 	case 'loginteacher':
 	 		include 'login.php';
 	 	break;
+
+	 	case ($action == 'login'):
+	if (isset($_SESSION['username']))
+		{
+			echo '<h1>Welkom '.$_SESSION['username'].'</h1>';
+			include 'teacher.php';			
+	}
+	// if (isset($_SESSION['username']))
+	// 	{
+	// 		echo '<h1>Welkom '.$_SESSION['username'].'</h1>';
+	// 		// echo "<hr>";
+	// 		// echo '<a href=?action=logout> uitloggen</a>';
+	// 	}
+
+
+	else{
+		include 'loginform.php';
+	}
 	 	
 	 	default:
 	 		# code...
 	 		break;
 	 } 
 
-
-// $sql = "SELECT id, name, surname FROM users";
-			// $result = $mysqli->query($sql); 
+?>
 
 
+	<canvas id="canvas" width="500" height="500">
 
-
-
-			 
-
-	?>
 
 	</canvas>
 	<div id="digiClock">Hier komt een digiklok :o</div>

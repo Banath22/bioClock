@@ -8,15 +8,12 @@ if ($request_username != '' && $request_password != '')
   {
    $result = $mysqli->query("SELECT * FROM users WHERE username = '".$request_username."' AND password = '".$request_password."'"); 
    $user_match_count = $result->num_rows;
- 
-   if ($user_match_count == 1)
+    if ($user_match_count == 1)
    {
-    $user_row = $result->fetch_assoc();
-    $_SESSION['username'] = $user_row['username'];
-    $_SESSION['userid'] = $user_row['id'];
-    header('location: teacher.php');
+    echo "welkom";
+    include 'teacher.php');
 
-   }
+   }  
 }
 // elseif ($request_username != '' && $request_password != '')
 //   {
