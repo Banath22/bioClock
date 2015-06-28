@@ -9,10 +9,6 @@
 </head>
 <body>
 <div class="wrapper">
-	<canvas id="canvas" width="500" height="500">
-
-	</canvas>
-	<div id="digiClock">Hier komt een digiklok :o</div>
 </div>
 </body>
 </html>
